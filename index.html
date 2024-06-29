@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="weather.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mt-5">Weather</h1>
+      <form action="" method="get" id="zipEntry" class="my-3">
+        <div class="input-group">
+          <label for="zipCode" class="visually-hidden"
+            >Enter your ZIP code:</label
+          >
+          <input
+            type="text"
+            name="ZIP"
+            id="zipCode"
+            class="form-control"
+            placeholder="Enter your ZIP code"
+            required
+          />
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+      <div class="my-3">
+        <h2>Weather data for your location</h2>
+        <ul id="output" class="list-group">
+          <li class="list-group-item">Current Date:</li>
+          <li class="list-group-item">City:</li>
+          <li class="list-group-item">Current Temperature:</li>
+          <li class="list-group-item">Current Conditions:</li>
+          <li class="list-group-item">Temp Hi/Lo:</li>
+        </ul>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="weather.js"></script>
+  </body>
+</html>
